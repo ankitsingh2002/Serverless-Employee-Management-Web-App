@@ -1,0 +1,15 @@
+Not required to make public of our bucket object first you make Public Bucket and then enable hosting website and put 'index.html'.
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::serverlessproj05/*"
+        }
+    ]
+}
